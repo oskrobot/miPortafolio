@@ -71,18 +71,26 @@ nav {
 }
 
 .navbar-left ul {
-  margin-left: 60px;  
+  margin-left: 40px;  
   font-weight: 500;
 }
 
-.navbar-left ul li a,
+.navbar-left ul li a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid var(--white);
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 700;
+}
 .navbar-right ul li a {
-    text-decoration: none;
-    color: black;
-    border: 1px solid var(--white);
-    padding: 8px;
-    border-radius: 8px;
-    font-size: var(--md);
+  text-decoration: none;
+  color: black;
+  border: 1px solid var(--white);
+  padding: 8px;
+  border-radius: 8px;
+  font-size: var(--md);
 }
 
 .navbar-left ul li a:hover,
@@ -94,8 +102,8 @@ nav {
 .navbar-email {
   color: var(--gray);
   cursor: pointer;
-  font-size: var(--sm);
-  margin-right: 12px;
+  font-size: 11px;
+  /* margin-right: 12px; */  
 }
 
 .avatar--circle {   
@@ -201,6 +209,31 @@ nav {
   .navbar-left ul,
   .navbar-email {
     display: none;
+  }
+  .navbar-left ul {
+    margin-left: 38px;
+  }
+}
+
+@media (min-width: 703px) {
+  .navbar-left ul li a {
+    font-size: var(--sm);
+  }
+}
+
+@media (min-width: 739px) {
+  .navbar-email {
+    font-size: var(--sm);
+  }
+}
+
+@media (min-width: 801px) {
+  .navbar-left ul {
+    margin-left: 65px;
+  }
+  .navbar-email {
+    font-size: var(--md);
+    margin-right: 12px;
   }
 }
 

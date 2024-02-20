@@ -269,6 +269,10 @@ nav {
   height: 40px;
 }
 
+.info-container--icons a img:hover {
+  transform: scale(1.2);
+}
+
 .acercademi {
   display: flex;
   width: 75%;
@@ -307,7 +311,7 @@ nav {
   font-weight: bold;
   text-decoration: none;
   color: var(--primary-blue);
-  justify-content: center;
+  justify-content: center;   
 }
 
 .portafolio-container .contacto--button span {
@@ -322,6 +326,7 @@ nav {
 .portafolio-container .contactame {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .portafolio-container .contactame .line {
@@ -340,7 +345,67 @@ nav {
   right: 143px;
 }
 
+.main-proyecto {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  background-color: var(--primary-blue);
+  border-radius: 65px 0 0 0;
+}
 
+.main-proyecto--detail {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  margin: 10px 40px;
+}
+
+.proyecto-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin-top: 70px;
+}
+
+.proyecto-icons .proyecto-detail--icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.proyecto-icons .css {
+  background-image: url(./assets/icons/bxl-css3.svg);
+}
+
+.proyecto-icons .javascript {
+  background-image: url(./assets/icons/bxl-javascript.svg);
+}
+
+.proyectos-cards--container .proyecto-detail--card {
+  width: 90%;
+  max-width: 400px;
+  min-height: 152px;
+  /* margin: 15px auto; */
+  padding: 15px;
+  background-color: var(--secondary-soft-blue);
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
+}
+
+.main-proyectos--title {
+  margin-bottom: 10px;
+}
+
+.main-proyectos--title h2 {
+  font-size: 2.4rem;
+  font-style: italic;
+  color: whitesmoke;
+}
 
 /* Media query */
 

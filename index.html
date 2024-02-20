@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Oscar Ortiz</title>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"> -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -31,15 +37,16 @@
 
         <div class="navbar-right">
             <ul>
+                <li class="email-icon inactive">
+                    <img src="./assets/icons/bx-email.svg" alt="Email">
+                </li>
                 <li class="navbar-email">inge.oscarortiz@gmail.com</li>
             </ul>
         </div>
 
-        <div class="desktop-menu-email inactive">
+        <div class="mobile-email inactive">
             <ul>
-                <li>
-                    <a href="/">Contáctame</a>
-                </li>
+                <li>inge.oscarortiz@gmail.com</li>
             </ul>
         </div>
 
@@ -57,46 +64,27 @@
             </ul>
 
             <ul>
-                <li>
-                    <a href="/" class="email">inge.oscarortiz@gmail.com</a>
-                </li>
+                <li class="email">inge.oscarortiz@gmail.com</li>                
             </ul>
         </div>
     </nav>
-     <aside id="container">
-        <div class="avatar--circle">                          
-            <img src="./assets/img/fotoDePerfil.webp" alt="foto" class="avatar">
+     <section class="portafolio-container">
+        <div class="info-container">
+            <div class="avatar--circle">                          
+                <img src="./assets/img/fotoDePerfil.webp" alt="foto" class="avatar">
+            </div>
+            <div class="text1">
+                <h2>Aquí encontrarás una muestra de mis proyectos y habilidades en el desarrollo web</h2>
+            </div>
         </div>
-     </aside>
-
-    <!-- <header>
-        <div class="header--circle">            
-            <span class="header--avatar">
-                <img class="header--avatar-img" src="./assets/img/fotoDePerfil.webp" alt="Mi foto">
-            </span>
-        </div>                  
-        <div class="header--title-container">
-            <h1>Oscar Ortiz</h1>
-            <p>Bienvenidos a mi portafolio</p>
-            <a href="#perfil" class="header--button">Conoce mi perfil<span></span></a>           
+        <div class="acercademi">            
+            <div class="text2">
+                <h2>Acerca de mí ▼</h2>  
+                <p class="acercademi-p">
+                    Profesionalmente, soy Ingeniero de Sistemas. Aunque inicialmente no sentí una fuerte inclinación hacia la programación durante mis años universitarios, mi perspectiva ha cambiado con el tiempo. Después de graduarme, pasé más de seis años inmerso en diversos campos, desde la tutoría en Tecnologías de la Información y Comunicación hasta la gestión de bases de datos y la manipulación de información en Excel. Este recorrido me brindó una perspectiva más amplia y me permitió adquirir habilidades valiosas en el ámbito informático. Ahora, estoy reavivando mi interés por la programación y expandiendo mis horizontes profesionales. Este portafolio es un testimonio de mi compromiso con el aprendizaje continuo y la aplicación práctica de mis conocimientos. Mi deseo es seguir creciendo y desarrollando nuevas habilidades mientras avanzo en esta trayectoria.
+                </p>              
+            </div>
         </div>
-    </header>
-    <main>
-        <section class="main-container">
-            <section class="firstText">
-                <div class="line-read-left">
-                    <div></div>
-                </div>
-                <h2>Aquí encontrarás una muestra de mis proyectos y habilidades en el desarrollo web</h2>                
-                <div class="line-read-right">
-                    <div></div>
-                </div>
-            </section>
-            <section></section>
-            <section></section>
-            <section></section>
-        </section>
-    </main>
-    <footer></footer> -->
+     </section>
 </body>
 </html>

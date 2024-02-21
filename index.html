@@ -24,13 +24,13 @@
             <span class="primerApellido nombre">Ortiz</span>
             <ul>
                 <li>
-                    <a href="/">Acerca de mí</a>
+                    <a href="#aboutmyself">Acerca de mí</a>
                 </li>
                 <li>
-                    <a href="/">Proyectos</a>
+                    <a href="#proyectos">Proyectos</a>
                 </li>
                 <li>
-                    <a href="/">Educación</a>
+                    <a href="#educacion">Educación</a>
                 </li>
             </ul>
         </div>
@@ -53,13 +53,13 @@
         <div class="mobile-menu inactive">
             <ul>
                 <li>
-                    <a href="/">Acerca de mí</a>
+                    <a href="#aboutmyself">Acerca de mí</a>
                 </li>
                 <li>
-                    <a href="/">Proyectos</a>
+                    <a href="#proyectos">Proyectos</a>
                 </li>
                 <li>
-                    <a href="/">Educación</a>
+                    <a href="#educacion">Educación</a>
                 </li>
             </ul>
 
@@ -87,7 +87,7 @@
             </div>
         </div>
         <div class="acercademi">            
-            <div class="text2">
+            <div class="text2" id="aboutmyself">
                 <h2>Acerca de mí ▼</h2>  
                 <p class="acercademi-p">
                     Profesionalmente, soy Ingeniero de Sistemas. Aunque inicialmente no sentí una fuerte inclinación hacia la programación durante mis años universitarios, mi perspectiva ha cambiado con el tiempo. Después de graduarme, pasé más de seis años inmerso en diversos campos, desde la tutoría en Tecnologías de la Información y Comunicación hasta la gestión de bases de datos y la manipulación de información en Excel. Este recorrido me brindó una perspectiva más amplia y me permitió adquirir habilidades valiosas en el ámbito informático. Ahora, estoy reavivando mi interés por la programación y expandiendo mis horizontes profesionales. Este portafolio es un testimonio de mi compromiso con el aprendizaje continuo y la aplicación práctica de mis conocimientos. Mi deseo es seguir creciendo y desarrollando nuevas habilidades mientras avanzo en esta trayectoria.
@@ -108,20 +108,59 @@
             <div class="proyecto-icons">
                 <span class="proyecto-detail--icon css"></span>
                 <span class="proyecto-detail--icon javascript"></span>
+                <span class="proyecto-detail--icon html"></span>
+                <span class="proyecto-detail--icon git"></span>
             </div>
             <div>
                 <section class="proyectos-cards--container">
-                    <div class="main-proyectos--title">
+                    <div class="main-proyectos--title" id="proyectos">
                         <h2>Proyectos 🚀</h2>
                     </div>
-                    <article class="proyecto-detail--card">
-                        <span class="proyecto-card--icon briefcase">Maletín</span>
-                        <p class="proyecto-card--title">Portafolio Personal</p>
-                        <p class="proyecto-card--body">Este portafolio se hizo con HTML, CSS y JavaScript</p>
-                    </article>
+                    <section class="cards-proyect">                        
+                        <article class="proyecto-detail--card">
+                            <div>
+                                <span class="proyecto-card--icon briefcase"></span>
+                                <p class="proyecto-card--title">Portafolio Personal</p>
+                            </div>
+                            <p class="proyecto-card--body">Este portafolio es, hasta el momento, mi primer proyecto, en dónde procuro demuestrar mis habilidades como desarrollador web frontend, este proyecto está hecho con HTML, CSS y JavaScript</p>
+                        </article>
+                        <article class="proyecto-detail--card">
+                            <div>
+                                <span class="proyecto-card--icon paintroll"></span>
+                                <p class="proyecto-card--title">En Construcción</p>
+                            </div>
+                            <p class="proyecto-card--body">He realizado ejercicios prácticos los cuales se pueden ver en mi cuenta de GitHub conforme a los estudios que he venido desarrollando y estoy a la espera de poder aportar y ser parte de buenos proyectos</p>
+                        </article>
+                    </section>
+
                 </section>
             </div>
         </div>
      </section>
+     <section class="estudios-main" id="educacion">        
+        <div class="education-info">
+            <h2><span class="education-icon graduation-hat"></span>Educación Profesional</h2>            
+            <p>Ingeniero de Sistemas</p>
+            <p>Universidad Mariana</p>
+        </div>
+        <div>            
+            <h2><span class="education-icon certification-icon"></span>Certificaciones o Cursos</h2>            
+            <div class="certifications">
+                <span class="platzi-logo"></span>
+                <p class="platzi">Platzi</p>
+                <span class="arrow-down"></span>
+            </div>
+        </div>        
+     </section>
+     <footer>
+        <ul>
+            <li>
+                <a href="#">Linkedin</a>
+            </li>
+            <li>
+                <a href="#">GitHub</a>
+            </li>
+        </ul>
+     </footer>
 </body>
 </html>

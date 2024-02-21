@@ -267,6 +267,7 @@ nav {
 .info-container--icons a img {
   width: 40px;
   height: 40px;
+  transition: transform 0.2s ease;
 }
 
 .info-container--icons a img:hover {
@@ -310,8 +311,14 @@ nav {
   font-size: 1.4rem;
   font-weight: bold;
   text-decoration: none;
-  color: var(--primary-blue);
-  justify-content: center;   
+  color: black;
+  justify-content: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.portafolio-container .contacto--button:hover {
+  background-color: var(--off-gray);
+  box-shadow: 0 0 8px #0E469A,0 0 12px #0E2B5D;
 }
 
 .portafolio-container .contacto--button span {
@@ -353,6 +360,7 @@ nav {
   padding: 20px 10px;
   background-color: var(--primary-blue);
   border-radius: 65px 0 0 0;
+  margin-bottom: 15px;
 }
 
 .main-proyecto--detail {
@@ -361,12 +369,18 @@ nav {
   margin: 10px 40px;
 }
 
+.main-proyecto--detail div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
 .proyecto-icons {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
   margin-top: 70px;
+  padding: 5px 0 0 40px;
 }
 
 .proyecto-icons .proyecto-detail--icon {
@@ -386,11 +400,19 @@ nav {
   background-image: url(./assets/icons/bxl-javascript.svg);
 }
 
+.proyecto-icons .html {
+  background-image: url(./assets/icons/bxl-html5.svg);
+}
+
+.proyecto-icons .git {
+  background-image: url(./assets/icons/bxl-git.svg);
+}
+
 .proyectos-cards--container .proyecto-detail--card {
   width: 90%;
   max-width: 400px;
   min-height: 152px;
-  /* margin: 15px auto; */
+  margin: 15px auto;
   padding: 15px;
   background-color: var(--secondary-soft-blue);
   border-radius: 5px;
@@ -407,9 +429,167 @@ nav {
   color: whitesmoke;
 }
 
+.proyecto-detail--card div {
+  display: flex;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  align-items: center;
+  background-color: #163b7c;
+  border-radius: 5px;
+}
+
+.proyecto-card--icon {
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 15px;
+}
+
+.briefcase {
+  background-image: url(./assets/icons/bx-briefcase.svg);
+}
+
+.paintroll {
+  background-image: url(./assets/icons/bx-paint-roll.svg);
+}
+
+.proyecto-card--title {
+  font-size: var(--lg);
+  color: white;
+  font-weight: bold;  
+}
+
+.proyecto-detail--card .proyecto-card--body {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--off-gray);
+  margin-left: 2px;
+}
+
+.estudios-main {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 475px));
+  margin: 0 auto 15px;
+  padding: 0 15px;
+  justify-content: center;
+}
+
+.estudios-main h2 {
+  font-size: var(--lg);
+  color: var(--primary-blue);
+  font-weight: bold;
+}
+
+.estudios-main .education-icon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+
+.graduation-hat {
+  background-image: url(./assets/icons/bxs-graduation.svg);
+}
+
+.certification-icon {
+  background-image: url(./assets/icons/bx-receipt.svg);
+}
+
+.estudios-main div h2 {
+  display: flex;
+  align-items: center;
+}
+
+.estudios-main div p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--secondary-soft-blue);
+  margin-left: 19px;
+}
+
+.education-info p:nth-child(2) {
+  margin-bottom: 4px;
+}
+
+.education-info p:nth-child(3) {
+  font-size: 1.4rem;
+  color: var(--primary-blue);
+}
+
+.certifications {
+  display: flex;
+  align-items: center;
+  background-color: #cecef6;
+  height: 50px;
+  border-radius: 8px;
+  justify-content: space-between;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
+} 
+
+.platzi-logo {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  
+  background-image: url(./assets/icons/platzi_logo_icon_248838.png);
+  margin-left: 14px;
+}
+
+.certifications .platzi {
+  font-size: 2.7rem;
+  margin-left: 0;
+}
+
+.arrow-down {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  
+  background-image: url(./assets/icons/arrow_down.svg);
+  margin-right: 8px;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: var(--primary-blue);
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer li {
+  margin: 10px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
 /* Media query */
 
-@media (max-width: 640px) {
+@media (max-width: 645px) {
   .menu, 
   .email-icon,
   .mobile-email {
@@ -424,13 +604,13 @@ nav {
   }
 }
 
-@media (min-width: 703px) {
+@media (min-width: 709px) {
   .navbar-left ul li a {
     font-size: var(--sm);
   }
 }
 
-@media (min-width: 739px) {
+@media (min-width: 745px) {
   .navbar-email {
     font-size: var(--sm);
   }
@@ -440,8 +620,13 @@ nav {
   .navbar-left ul {
     margin-left: 65px;
   }
-  .navbar-email {
-    font-size: var(--md);
-    margin-right: 12px;
+}
+
+@media (min-width: 1043px) {
+  .cards-proyect {
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto; 
   }
 }

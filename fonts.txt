@@ -12,3 +12,13 @@
   font-weight: <weight>;
   font-style: normal;
 }
+
+https://platzi.com/p/oskr11/curso/2008-html-css/diploma/detalle/ 
+https://platzi.com/p/oskr11/curso/2467-frontend-developer/diploma/detalle/ 
+https://platzi.com/p/oskr11/curso/5877-linux/diploma/detalle/
+https://platzi.com/p/oskr11/curso/2030-mobile-first/diploma/detalle/ 
+https://platzi.com/p/oskr11/curso/2477-frontend-developer-practico/diploma/detalle/ 
+https://platzi.com/p/oskr11/curso/1758-html-practico/diploma/detalle/
+https://platzi.com/p/oskr11/curso/3271-javascript-practico/diploma/detalle/ 
+https://platzi.com/p/oskr11/curso/2222-css-grid-layout/diploma/detalle/
+https://platzi.com/p/oskr11/curso/1557-git-github/diploma/detalle/

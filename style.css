@@ -795,6 +795,10 @@ footer a {
   color: white;
 }
 
+footer p {
+  color: var(--off-gray);
+}
+
 /* Media query */
 
 @media (max-width: 645px) {

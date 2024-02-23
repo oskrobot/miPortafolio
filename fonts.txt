@@ -1,18 +1,3 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-
-
-// <uniquifier>: Use a uniquifier for the class name
-// <weight>: Use a value from 100 to 1000
-
-.dm-sans-<uniquifier> {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
 https://platzi.com/p/oskr11/curso/2008-html-css/diploma/detalle/ 
 https://platzi.com/p/oskr11/curso/2467-frontend-developer/diploma/detalle/ 
 https://platzi.com/p/oskr11/curso/5877-linux/diploma/detalle/
@@ -22,3 +7,5 @@ https://platzi.com/p/oskr11/curso/1758-html-practico/diploma/detalle/
 https://platzi.com/p/oskr11/curso/3271-javascript-practico/diploma/detalle/ 
 https://platzi.com/p/oskr11/curso/2222-css-grid-layout/diploma/detalle/
 https://platzi.com/p/oskr11/curso/1557-git-github/diploma/detalle/
+
+https://www.linkedin.com/in/oscar-alexander-ortiz-beltran

@@ -194,7 +194,12 @@ nav {
 
 .email-icon img {  
   display: flex;
-  justify-content: center;  
+  justify-content: center; 
+  transition: transform 0.2s ease; 
+}
+
+.email-icon img:hover{
+  transform: scale(1.2);
 }
 
 /* Section conteiner */
@@ -532,6 +537,35 @@ nav {
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.16);
 } 
 
+.certification-central {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.certification-container > button {
+  width: 50vw;
+  height: 50px;
+  color: white;
+  background-color: var(--secondary-soft-blue);
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.certification-container > button:hover {
+  /* background-color: var(--off-gray); */
+  box-shadow: 0 0 8px #0E469A,0 0 12px #0E2B5D;
+}
+
 .platzi-logo {
   display: inline-block;
   width: 35px;
@@ -543,11 +577,6 @@ nav {
   margin-left: 14px;
 }
 
-.certifications .platzi {
-  font-size: 2.7rem;
-  margin-left: 0;
-}
-
 .arrow-down {
   display: inline-block;
   width: 35px;
@@ -557,6 +586,147 @@ nav {
   background-repeat: no-repeat;  
   background-image: url(./assets/icons/arrow_down.svg);
   margin-right: 8px;
+}
+
+#flecha {
+  transition: .4s ease;
+}
+
+.rotar180 {
+  transform: rotate(180deg);
+  transition: .4s ease;
+}
+
+.cert-container-centro {
+  width: 48vw;
+  height: 105px;
+  background-color: #b9c2d0;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: absolute;
+  animation-name: animate_1;
+  animation-duration: .4s;
+  margin-top: 5px;
+  margin-left: 13px;
+}
+
+@keyframes animate_1 {
+  from {top: 130px; opacity: 0}
+  to {top: 190px; opacity: 1}
+}
+
+.mostrar {
+  display: inline-flex;
+}
+
+.cert-container {
+  width: 43vw;
+  height: 105px;
+  border-radius: 20px;
+  overflow-y: auto;
+}
+
+.cert {
+  width: 259px;
+  height: 31px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  display: flex;    
+  align-items: center;
+  cursor: pointer;
+  transition: .4s ease;
+}
+
+.cert:hover {
+  background-color: #C8D4E2;
+}
+.nombre-cert {
+  width: 270px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.nombre-cert h2 {
+  font-size: var(--sm);
+  font-weight: normal;
+}
+
+.nombre-cert a {
+  text-decoration: none;
+}
+
+/* Formulario de contacto */
+
+form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 340px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+form h2 {
+  color: #283629;
+  font-size: 35px;
+}
+
+label {
+  color: #283629;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: #EDFFF0;
+  border: 2px solid #f0faf1;
+  color: #283629;
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #b5cab6;
+}
+
+.form.txt {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* .form-txt a {
+  color: #76b28e;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+} */
+
+.btn {
+  font-size: 16px;
+  color: white;
+  border: 0;
+  border-radius: 25px;
+  background-color: var(--secondary-soft-blue);
+  box-shadow: 0 0 20px rgba(10, 8, 114, 0.4);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--primary-blue);
 }
 
 footer {
@@ -604,6 +774,12 @@ footer a {
   }
 }
 
+@media (min-width: 645px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 @media (min-width: 709px) {
   .navbar-left ul li a {
     font-size: var(--sm);
@@ -628,5 +804,18 @@ footer a {
     flex-wrap: wrap;
     width: 930px;
     margin: 0 auto; 
+  }
+}
+
+@media(max-width:991px) {
+  /* body {
+      padding: 30px;
+  } */
+  form {
+      padding: 50px 30px;
+      width: 100%;
+  }
+  input {
+      padding: 15px;
   }
 }

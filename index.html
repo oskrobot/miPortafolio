@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Oscar Ortiz</title>
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"> -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <nav>
@@ -67,7 +64,8 @@
                 <li class="email">inge.oscarortiz@gmail.com</li>                
             </ul>
         </div>
-    </nav>
+    </nav>    
+    
      <section class="portafolio-container">
         <div class="info-container">
             <div class="avatar--circle">                          
@@ -145,13 +143,135 @@
         </div>
         <div>            
             <h2><span class="education-icon certification-icon"></span>Certificaciones o Cursos</h2>            
-            <div class="certifications">
-                <span class="platzi-logo"></span>
-                <p class="platzi">Platzi</p>
-                <span class="arrow-down"></span>
-            </div>
+                <div class="certification-central">
+                    <div class="certification-container">
+
+                        <button class="certifications" onclick="listaCertificados()">
+                            <span class="platzi-logo"></span>
+                            Platzi
+                            <span id="flecha" class="arrow-down"></span>
+                        </button>
+
+                        <div id="certification" class="cert-container-centro">
+                            <div class="cert-container">
+
+                                <!-- Cert 1 -->
+                                <div class="cert">                                                       
+                                    <div class="nombre-cert">
+                                        <a class="cert-link" target="_blank" rel="noopener" href="https://platzi.com/p/oskr11/curso/2008-html-css/diploma/detalle/">
+                                            <h2>Curso de HTML y CSS</h2>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Cert 2 -->
+                                <div class="cert">
+                                    <div class="nombre-cert">                                        
+                                        <a class="cert-link" target="_blank" rel="noopener" href="https://platzi.com/p/oskr11/curso/2467-frontend-developer/diploma/detalle/">
+                                            <h2>Frontend Developer</h2>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Cert 3 -->
+                                <div class="cert">
+                                    <div class="nombre-cert">
+                                        <a class="cert-link" target="_blank" rel="noopener" href="https://platzi.com/p/oskr11/curso/1557-git-github/diploma/detalle/">
+                                            <h2>Curso profesional de Git y GitHub</h2>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Cert 4 -->
+                                <div class="cert">
+                                    <div class="nombre-cert">
+                                        <a class="cert-link" target="_blank" rel="noopener" href="https://platzi.com/p/oskr11/curso/2030-mobile-first/diploma/detalle/ ">
+                                            <h2>Responsive Design: Mobile First</h2>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Cert 5 -->
+                                <div class="cert">
+                                    <div class="nombre-cert">
+                                        <a class="cert-link" target="_blank" rel="noopener" href="https://platzi.com/p/oskr11/curso/2477-frontend-developer-practico/diploma/detalle/">
+                                            <h2>Curso Práctico de Frontend Developer</h2>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Cert 6 -->
+                                <div class="cert">
+                                    <div class="nombre-cert">
+                                        <a class="cert-link" target="_blank" rel="noopener" href="https://platzi.com/p/oskr11/curso/1758-html-practico/diploma/detalle/">
+                                            <h2>Curso práctico de HTML y CSS</h2>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Cert 7 -->
+                                <div class="cert">  
+                                    <div class="nombre-cert">
+                                        <a class="cert-link" target="_blank" rel="noopener" href="https://platzi.com/p/oskr11/curso/3271-javascript-practico/diploma/detalle/">
+                                            <h2>Curso práctico de JavaScript</h2>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Cert 8 -->
+                                <div class="cert">
+                                    <div class="nombre-cert">
+                                        <a class="cert-link" target="_blank" rel="noopener" href="https://platzi.com/p/oskr11/curso/2222-css-grid-layout/diploma/detalle/">
+                                            <h2>CSS Grid Layout</h2>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Cert 9 -->
+                                <div class="cert">
+                                    <div class="nombre-cert">
+                                        <a class="cert-link" target="_blank" rel="noopener" href="https://platzi.com/p/oskr11/curso/5877-linux/diploma/detalle/">
+                                            <h2>Intro. Adminisrtación de Servidores</h2>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>        
      </section>
+
+     <form id="formulario-contacto" class="inactive" action="https://formsubmit.co/inge.oscarortiz@gmail.com" method="POST">
+        <h2>Contacto</h2>
+        <div class="input-group">
+            
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Nombre">
+
+            <!-- <label for="phone">Telefono</label>
+            <input type="tel" name="phone" id="phone" placeholder="Teléfono"> -->
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+
+            <!-- <div class="form-txt">                
+                <a href="#">Política de privacidad</a>
+                <a href="#">Terminos y condiciones</a>
+            </div> -->
+
+            <input class="btn" type="submit" value="Enviar">
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+            <input type="hidden" name="_captcha" value="false">
+
+        </div>
+    </form>
+
      <footer>
         <ul>
             <li>

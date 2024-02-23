@@ -167,8 +167,8 @@ nav {
 
 .mobile-email {
   position: absolute;  
-  top: 28px;
-  padding: 4px 15px 15px 15px;
+  top: 31px;
+  padding: 0 15px 0 15px;
   right: 0;
 }
 
@@ -190,6 +190,7 @@ nav {
 .email-icon {
   position: relative;
   cursor: pointer;
+  z-index: 999;
 }
 
 .email-icon img {  
@@ -319,6 +320,7 @@ nav {
   color: black;
   justify-content: center;
   transition: box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .portafolio-container .contacto--button:hover {
@@ -661,12 +663,48 @@ nav {
 
 /* Formulario de contacto */
 
+.overlay {
+  position: absolute;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para el overlay */
+  /* display: flex; */
+  /* display: none; */
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Colocar el overlay sobre todos los demás elementos */
+}
+
+.mostrar-form {
+  display: flex;
+}
+
 form {
   padding: 50px 55px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   text-align: center;
   width: 340px;
+  background-color: white;
+  position: relative;
+}
+
+.form-close {
+  background: #474747;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 19px;
+  left: 31px;
+  z-index: 2;
+  padding: 9px;
+  border-radius: 50%;
+}
+
+.contacto-close:hover {
+  cursor: pointer;
 }
 
 .input-group {
@@ -807,7 +845,7 @@ footer a {
   }
 }
 
-@media(max-width:991px) {
+@media(max-width:745px) {
   /* body {
       padding: 30px;
   } */

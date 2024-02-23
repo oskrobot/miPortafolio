@@ -95,10 +95,10 @@
         <div class="contactame">
             <span class="line1 line"></span>
             <span class="line2 line"></span>
-            <a class="contacto--button" href="#datosContacto">
+            <button class="contacto--button" onclick="mostrarForm()">
                 Contáctame
                 <span></span>
-            </a>            
+            </button>            
         </div>
      </section>
      <section class="main-proyecto">        
@@ -142,7 +142,7 @@
             <p>Universidad Mariana</p>
         </div>
         <div>            
-            <h2><span class="education-icon certification-icon"></span>Certificaciones o Cursos</h2>            
+            <h2><span class="education-icon certification-icon"></span>Cursos y Certificaciones</h2>            
                 <div class="certification-central">
                     <div class="certification-container">
 
@@ -243,34 +243,34 @@
         </div>        
      </section>
 
-     <form id="formulario-contacto" class="inactive" action="https://formsubmit.co/inge.oscarortiz@gmail.com" method="POST">
-        <h2>Contacto</h2>
-        <div class="input-group">
+     <div class="overlay inactive">
+         <form id="formulario-contacto" class="inactive" action="https://formsubmit.co/inge.oscarortiz@gmail.com" method="POST">
             
-            <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" placeholder="Nombre">
+            <div class="form-close">
+                <img src="./assets/icons/icon_close.png" alt="close">
+            </div>
 
-            <!-- <label for="phone">Telefono</label>
-            <input type="tel" name="phone" id="phone" placeholder="Teléfono"> -->
-
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Email">
-
-            <label for="message">Mensaje</label>
-            <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
-
-            <!-- <div class="form-txt">                
-                <a href="#">Política de privacidad</a>
-                <a href="#">Terminos y condiciones</a>
-            </div> -->
-
-            <input class="btn" type="submit" value="Enviar">
-
-            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
-            <input type="hidden" name="_captcha" value="false">
-
-        </div>
-    </form>
+            <h2>Contacto</h2>
+            <div class="input-group">
+         
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Nombre">
+                <!-- <label for="phone">Telefono</label>
+                <input type="tel" name="phone" id="phone" placeholder="Teléfono"> -->
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                <!-- <div class="form-txt">
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Terminos y condiciones</a>
+                </div> -->
+                <input class="btn" type="submit" value="Enviar">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                <input type="hidden" name="_captcha" value="false">
+            </div>
+             </form>
+     </div>
 
      <footer>
         <ul>

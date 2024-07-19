@@ -178,10 +178,6 @@ header {
   margin: 13px 0 0;  
 }
 
-.mobile-email ul li {
-  color: var(--gray);
-}
-
 .email {
   font-size: 12px;
   font-weight: 300 !important;

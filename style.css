@@ -205,6 +205,10 @@ nav {
 
 /* Section conteiner */
 
+.portafolio-container {
+  padding: 5px 7px;  
+}
+
 .info-container {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 370px));
@@ -229,7 +233,7 @@ nav {
 }
 
 .avatar--circle .avatar {  
-  border-radius: 9999px;
+  border-radius: 100%;
   border-top: 0.8em solid #0E2B5D;
   border-left: 1em solid #5D5D5D;
   border-right: 1em solid #5D5D5D;

@@ -24,11 +24,11 @@ html {
   display: none;
 }
 
-nav {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
+  padding: 10px 50px;
   border-bottom: 1px solid var(--soft-blue);
 }
 
@@ -205,31 +205,28 @@ nav {
 
 /* Section conteiner */
 
-.portafolio-container {
-  padding: 5px 7px;  
-}
+/* #hero {
+  position: relative;
+} */
 
-.info-container {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 370px));
-  gap: 16px;
-  place-content: center;
-  margin-top: 7px;
-  grid-auto-rows: 222px;
+#hero .info-container {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  /* left: 0; */
+  display: flex;  
+  width: 100%;
   background-color: var(--off-gray);
   box-shadow: 0 3px 1em #020305;
-}
-
-.avatar {
-  width: 100px;
-}
-
-.avatar--circle {   
-  width: 100%;
-  aspect-ratio: 1;
-  display: flex;
   justify-content: center;
-  margin-top: 6px;
+}
+
+/* .avatar {
+  width: 100px;
+} */
+
+#hero .info-container .avatar--circle{
+  width: 200px;
 }
 
 .avatar--circle .avatar {  
@@ -306,7 +303,7 @@ nav {
   text-align: justify;
 }
 
-.portafolio-container .contacto--button {
+.contacto--button {
   display: flex;
   position: relative;
   /* top: 590px; */
@@ -327,12 +324,12 @@ nav {
   cursor: pointer;
 }
 
-.portafolio-container .contacto--button:hover {
+.contacto--button:hover {
   background-color: var(--off-gray);
   box-shadow: 0 0 8px #0E469A,0 0 12px #0E2B5D;
 }
 
-.portafolio-container .contacto--button span {
+.contacto--button span {
   display: inline-block;
   width: 21px;
   height: 17px;
@@ -341,13 +338,13 @@ nav {
   background-position: center;
 }
 
-.portafolio-container .contactame {
+.contactame {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.portafolio-container .contactame .line {
+.contactame .line {
   width: 17%;
   height: 2px;
   background-image: url(./assets/icons/Line.svg);
@@ -355,11 +352,11 @@ nav {
   position: absolute;
 }
 
-.portafolio-container .line1 {
+.line1 {
   left: 143px;
 }
 
-.portafolio-container .line2 {
+.line2 {
   right: 143px;
 }
 
